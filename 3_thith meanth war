@@ -1,0 +1,73 @@
+#1/8
+print "Thtring, pleathe!: "
+user_input = gets.chomp
+user_input.downcase!
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+else
+  puts "Nothing to do here!"
+end
+  
+puts "Your string is: #{user_input}"
+
+#2/8
+print "Type something"
+user_input = gets.chomp
+
+#3/8
+print "Type something"
+user_input = gets.chomp.downcase!
+
+#4/8
+print "Type something"
+user_input = gets.chomp.downcase!
+
+if user_input.include? "s"
+  print "go it"
+else
+  print "nop"
+end
+
+#5/8
+print "Type something"
+user_input = gets.chomp.downcase!
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+  print "go it"
+else
+  print "nop"
+end
+
+#6/8
+print "Type something"
+user_input = gets.chomp.downcase!
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+  puts "#{user_input}"
+else
+  print "nop"
+end
+
+#7/8 --- tbc
+print "Type something"
+user_input = gets.chomp.downcase!
+
+
+if user_input ==""
+  puts "Write!!"
+  
+end
+
+=begin
+if
+  user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+  puts "#{user_input}"
+else
+  print "no s"
+end
+=end
+
