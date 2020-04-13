@@ -51,23 +51,38 @@ else
   print "nop"
 end
 
-#7/8 --- tbc
+#7/8
 print "Type something"
-user_input = gets.chomp.downcase!
+user_input = gets.chomp
+user_input.downcase!
 
-
-if user_input ==""
-  puts "Write!!"
-  
-end
-
-=begin
 if
   user_input.include? "s"
   user_input.gsub!(/s/, "th")
   puts "#{user_input}"
 else
-  print "no s"
+  puts "no s"
 end
-=end
+
+#8/8A
+print "Type something"
+user_input = gets.chomp
+
+while user_input == ""
+  print "Really...type something"
+  user_input = gets.chomp
+end
+
+user_input.downcase!
+  if
+  user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+  puts "#{user_input}"
+  else
+    puts "no s"
+  end
+  
+  #8/8B
+  
+
 
