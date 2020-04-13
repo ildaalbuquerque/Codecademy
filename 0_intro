@@ -1,0 +1,83 @@
+#  2/16
+my_num = 25
+my_bolean = true
+my_string = "Ruby"
+
+# 3/16
+puts my_num = 100
+
+# 4/16
+num_1=1
+num_2=2
+num_3 = num_1 + num_2
+num_4 = num_2 ** num_2
+
+puts num_3
+puts num_4
+
+#5/16
+puts "Hello"
+print "People"
+
+#7/16
+answer = "Qualquer Nome".length
+puts answer
+
+#8/16
+answer = "Qualquer Nome".reverse
+puts answer
+
+#9/16
+answer_1 = "Qualquer Nome".upcase
+puts answer_1
+
+answer_2 = "Qualquer Nome".downcase
+puts answer_2
+
+#10/16
+#Single Line Comment
+
+#11/16
+=begin
+Multi-Line Comment
+=end
+
+#12/16
+name = "Qualquer Nome"
+puts name
+
+#13/16
+my_name = "Qualquer Nome"
+my_age = 36
+
+puts my_name 
+puts my_age
+
+#14/16
+sum = 13+379
+product = 923*15
+quotient=13209/17
+
+puts sum
+puts product
+puts quotient
+
+#15/16
+name = "Qualquer Nome"
+name_1 = name.downcase
+name_2 = name_1.reverse
+name_3 = name_2.upcase
+
+puts name
+puts name_1
+puts name_2
+puts name_3
+
+puts name.downcase.reverse.upcase
+
+#16/16
+# Single-line comment
+
+=begin
+Multi-line comments
+=end
