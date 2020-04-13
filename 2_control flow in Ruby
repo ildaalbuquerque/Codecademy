@@ -1,0 +1,159 @@
+#1/17
+print "Integer please: "
+user_num = Integer(gets.chomp)
+
+if user_num < 0
+  puts "You picked a negative integer!"
+elsif user_num > 0
+  puts "You picked a positive integer!"
+else
+  puts "You picked zero!"
+end
+
+#2/17
+if true
+  print "true"
+end
+
+#3/17
+puts "What's your first name?"
+name_1 = gets.chomp
+puts "What's your last name?"
+name_2 = gets.chomp
+
+if name_1.length > name_2.length
+  print "First name is bigger"
+else
+    print "First name is smaller"
+end
+
+#4/17
+puts "What's your first name?"
+name_1 = gets.chomp
+puts "What's your last name?"
+name_2 = gets.chomp
+
+if name_1.length > name_2.length
+  print "First name is bigger"
+elsif name_1.length < name_2.length
+    print "First name is smaller"
+else
+      print "Both names have the same length"
+end
+
+#5/17
+hungry = false
+
+unless hungry == true
+  puts "I'm writing Ruby programs!"
+else
+  puts "Time to eat!"
+end
+
+#6/17
+is_true = 2 != 3
+
+is_false = 2 == 3
+
+#7/17
+test_1 = 17 > 16
+
+test_2 = 21 < 30
+
+test_3 = 9 >= 9
+
+test_4 = -11 < 4
+
+#8/17
+# test_1 = 77 != 77
+test_1 = false
+
+# test_2 = -4 <= -4
+test_2 = true
+
+# test_3 = -44 < -33
+test_3 = true
+
+# test_4 = 100 == 1000
+test_4 = false
+
+#9/17
+# boolean_1 = 77 < 78 && 77 < 77
+boolean_1 = false
+
+# boolean_2 = true && 100 >= 100
+boolean_2 = true
+
+# boolean_3 = 2**3 == 8 && 3**2 == 9
+boolean_3 = true
+
+#10
+# boolean_1 = 2**3 != 3**2 || true
+boolean_1 = true
+
+# boolean_2 = false || -10 > -9
+boolean_2 = false
+
+# boolean_3 = false || false
+boolean_3 = false
+
+#11
+# boolean_1 = !true
+boolean_1 = false
+
+# boolean_2 = !true && !true
+boolean_2 = false
+
+# boolean_3 = !(700 / 10 == 70)
+boolean_3 = false
+
+#12
+# boolean_1 = (3 < 4 || false) && (false || true)
+boolean_1 = true
+
+# boolean_2 = !true && (!true || 100 != 5**2)
+boolean_2 = false
+
+# boolean_3 = true || !(true || false)
+boolean_3 = true
+
+#13
+a=100
+b=200
+if a>b
+  puts "a is the greater"
+elsif b>a
+  puts "b is the greater"
+else
+  puts "match"
+end
+
+#14
+a = false
+puts "Hello" unless a
+
+#16/17
+# test_1 should be false
+test_1 = 10 !=5*2
+puts test_1
+
+# test_2 = should be false
+test_2 = 10 == -10
+puts test_2
+
+# test_3 = should be true
+test_3 = 70 > 30
+puts test_3
+
+#17/17
+# test_1 should be true
+test_1 = 8 ==4*2 && true
+puts test_1
+
+# test_2 = should be true
+test_2 = 10>5 || false
+puts test_2
+
+# test_3 = should be false
+test_3 = !(true)
+puts test_3
