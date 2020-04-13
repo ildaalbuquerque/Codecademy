@@ -22,3 +22,55 @@ puts "to substitute"
 redact = gets.chomp
 
 #3/6
+puts "Here full text"
+text = gets.chomp
+words = text.split("")
+
+puts "to substitute"
+redact = gets.chomp
+
+#4/6
+puts "Here full text"
+text = gets.chomp
+words = text.split("")
+words.each {|palavra| print palavra}
+
+puts "to substitute"
+redact = gets.chomp
+
+#5/6
+puts "Here full text"
+text = gets.chomp
+
+puts "to substitute"
+redact = gets.chomp
+
+words = text.split(" ")
+words.each {|palavra| 
+  if palavra == redact
+    print "REDACT "
+  else
+    print palavra + " "
+  end
+}
+
+#6/6
+puts "Here full text"
+text = gets.chomp.downcase!
+
+puts "to substitute 1"
+redact_1 = gets.chomp
+
+puts "to substitute 2"
+redact_2 = gets.chomp
+
+words = text.split(" ")
+words.each {|palavra| 
+  if palavra == redact_1
+    print "REDACT "
+  elsif palavra == redact_2
+    print "REDACT "
+  else
+    print palavra + " "
+  end
+}
