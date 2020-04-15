@@ -1,0 +1,94 @@
+#1/16
+my_array = [1, 1, 2, 3, 4]
+
+#2/16
+demo_array = [100, 200, 300, 400, 500]
+print  demo_array[2]
+
+#3/16
+string_array = ["Eu", "tu", "nos"]
+
+#4/16
+multi_d_array = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+multi_d_array.each { |x| puts "#{x}" }
+
+#5/16
+my_2d_array = [[1,2,3], [4,5,6]]
+
+#6/16
+my_hash = { "name" => "Eric",
+  "age" => 26,
+  "hungry?" => true
+}
+
+puts my_hash["name"]
+puts my_hash["age"]
+puts my_hash["hungry?"]
+
+#7/16
+pets = Hash.new
+
+#8/16
+pets = Hash.new
+pets["Nala"] = "dog"
+
+#9/16
+pets = Hash.new
+pets["Nala"] = "dog"
+puts pets["Nala"]
+
+#10/16
+friends = ["Milhouse", "Ralph", "Nelson", "Otto"]
+
+family = { "Homer" => "dad",
+  "Marge" => "mom",
+  "Lisa" => "sister",
+  "Maggie" => "sister",
+  "Abe" => "grandpa",
+  "Santa's Little Helper" => "dog"
+}
+
+friends.each { |x| puts "#{x}" }
+family.each { |x, y| puts "#{x}: #{y}" }
+
+#11/16
+languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+languages.each { |x| puts x}
+
+#12/16
+s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
+#sub_array = s.each { |sub_array| sub_array.each { |item| puts item} }
+sub_array = s.each do |sub_array| sub_array.each do |item| puts item end end
+
+#13/16
+secret_identities = {
+  "The Batman" => "Bruce Wayne",
+  "Superman" => "Clark Kent",
+  "Wonder Woman" => "Diana Prince",
+  "Freakazoid" => "Dexter Douglas"
+}
+  
+secret_identities.each do |superman, person|
+  puts "#{superman}: #{person}" end
+  
+  #14/16
+  my_array = [[1,2,3], [4,5,6]]
+  
+  #15/16
+  my_hash = {
+  "cidade" => 1,
+  "identidade" => 3
+}
+
+#16/16
+lunch_order = {
+  "Ryan" => "wonton soup",
+  "Eric" => "hamburger",
+  "Jimmy" => "sandwich",
+  "Sasha" => "salad",
+  "Cole" => "taco"
+}
+
+lunch_order.each {
+  |key,value| puts "#{value}"
+} 
