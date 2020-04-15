@@ -1,0 +1,91 @@
+#1/8
+puts "Please write"
+text = gets.chomp
+
+#2/8
+puts "Please write"
+text = gets.chomp
+words = text.split
+puts text
+
+#3/8
+puts "Please write"
+text = gets.chomp
+
+words = text.split
+puts text
+
+frequencies = Hash.new()
+
+#4/8
+frequencies = Hash.new(0)
+
+#5/8
+puts "Please write"
+text = gets.chomp
+
+words = text.split
+puts text
+
+frequencies = Hash.new(0)
+
+words.each do |x| frequencies[x] +=1 end
+puts frequencies
+
+#6/8
+puts "Please write"
+text = gets.chomp
+
+words = text.split
+puts text
+
+frequencies = Hash.new(0)
+
+words.each do |x| frequencies[x] +=1 end
+puts frequencies
+
+frequencies = frequencies.sort_by do |word, count| count
+end
+
+frequencies.reverse!
+
+#7/8
+puts "Please write"
+text = gets.chomp
+
+words = text.split
+puts text
+
+frequencies = Hash.new(0)
+
+words.each do |x| frequencies[x] +=1 end
+puts frequencies
+
+frequencies = frequencies.sort_by do |word, count| count
+end
+
+frequencies.reverse!
+
+frequencies.each do |word, count|
+  puts word + " " + count.to_s end
+  
+ #8/8
+ puts "Please write"
+text = gets.chomp
+
+words = text.split
+puts text
+
+frequencies = Hash.new(0)
+
+words.each do |x| frequencies[x] +=1 end
+puts frequencies
+
+frequencies = frequencies.sort_by do |word, count| count
+end
+
+frequencies.reverse!
+
+frequencies.each do |word, count|
+  puts word + " " + count.to_s end
+  
