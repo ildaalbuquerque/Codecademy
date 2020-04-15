@@ -1,0 +1,74 @@
+#1/19
+def prime(n)
+  puts "That's not an integer." unless n.is_a? Integer
+  is_prime = true
+  for i in 2..n-1
+    if n % i == 0
+      is_prime = false
+    end
+  end
+  if is_prime
+    puts "#{n} is prime!"
+  else
+    puts "#{n} is not prime."
+  end
+end
+
+prime(2)
+prime(9)
+prime(11)
+prime(51)
+prime(97)
+
+#2/19
+def puts_1_to_10
+  (1..10).each { |i| puts i }
+end
+
+puts_1_to_10 # Ignore this for now. We'll explain it soon!
+
+#3/19
+# Define your method below!
+def greeting
+  puts "Hi Hi Hi"
+end
+
+
+
+
+# Define your method above this line.
+
+greeting # Ignore this for now. We'll explain
+         # it in the next exercise!
+         
+#4/19
+def array_of_10
+  puts (1..10).to_a
+end
+
+array_of_10
+
+#5/19
+def cubertino(n)
+  puts n ** 3
+end
+
+cubertino (8)
+
+#6/19
+def what_up(greeting, *friends)
+  friends.each { |friend| puts "#{greeting}, #{friend}!" }
+end
+
+what_up("What up", "Ian", "Zoe", "Zenas", "Eleanor", "Ilda")
+
+#7/19
+def add (x,y)
+  return x+y
+end
+
+  puts add(1,6)
+  
+ #8/19
+ 
+ 
