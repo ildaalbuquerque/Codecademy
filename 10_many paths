@@ -1,0 +1,37 @@
+#1/15
+my_hash = Hash.new
+
+#2/15
+matz = { "First name" => "Yukihiro",
+  "Last name" => "Matsumoto",
+  "Age" => 47,
+  "Nationality" => "Japanese",
+  "Nickname" => "Matz"
+}
+
+matz.each do |k,v|
+  puts matz[k]
+end
+
+#3/15
+creatures = { "weasels" => 0,
+  "puppies" => 6,
+  "platypuses" => 3,
+  "canaries" => 1,
+  "Heffalumps" => 7,
+  "Tiggers" => 1
+}
+creatures["puppies2"]
+
+#4/15
+no_nil_hash=Hash.new("xuac")
+
+#5/15
+menagerie = { :foxes => 2,
+  :giraffe => 1,
+  :weezards => 17,
+  :elves => 1,
+  :canaries => 4,
+  :ham => 1
+}
+
