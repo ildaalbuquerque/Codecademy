@@ -82,3 +82,154 @@ else
 end
 
 #4/10
+movies =  {
+  "e tudo o vento levou" => 4
+}
+
+  puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+puts "What its rating?"
+rating = gets.chomp
+movies[title] = rating 
+  puts "#{title} with #{rating} was added"
+  when "update"
+  puts "Updated!"
+  when "display"
+  puts "Movies!"
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#4B/10
+movies =  {
+  "e tudo o vento levou" => 4
+}
+
+  puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+puts "What its rating?"
+rating = gets.chomp
+movies[title.to_s] = rating.to_i 
+  puts "#{title} with #{rating} was added"
+    puts movies
+  when "update"
+  puts "Updated!"
+  when "display"
+  puts "Movies!"
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#5/10
+movies =  {
+  "e tudo o vento levou".to_sym => 4
+}
+
+puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+puts "What its rating?"
+rating = gets.chomp
+movies[title.to_sym] = rating.to_i 
+  puts "#{title} with #{rating} was added"
+    puts movies
+  when "update"
+  puts "Updated!"
+  when "display"
+  puts "Movies!"
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#6/10
+movies =  {
+  "e tudo o vento levou".to_sym => 4
+}
+
+puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+  if movies[title.to_sym].nil?
+puts "What its rating?"
+   rating = gets.chomp
+movies[title.to_sym] = rating.to_i 
+puts "#{title} with #{rating} was added"
+  else
+    puts "already here"
+  end
+    puts movies
+  when "update"
+  puts "Updated!"
+  when "display"
+  puts "Movies!"
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#7/10
+movies =  {
+  "lo".to_sym => 4
+}
+
+puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+  if movies[title.to_sym].nil?
+   puts "What its rating?"
+   rating = gets.chomp
+   movies[title.to_sym] = rating.to_i 
+   puts "#{title} with #{rating} was added"
+  else
+    puts "already here"
+  end
+    puts movies
+  when "update"
+    puts "Title please"
+    title = gets.chomp
+  puts "#{title}"
+  if movies[title.to_sym].nil?
+     puts "Sure about the title?"
+  else
+    puts "and the updated rating is?"
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+  when "display"
+  puts "Movies!"
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#8/10
