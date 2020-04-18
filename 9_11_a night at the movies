@@ -53,3 +53,32 @@ else
 end
 
 #2/10
+movies =  {
+  "e tudo o vento levou" => 4
+}
+
+puts "And yours?"
+choice = gets.chomp
+
+#3/10
+movies =  {
+  "e tudo o vento levou" => 4
+}
+
+puts "What is your choice?"
+choice = gets.chomp
+
+case choice
+  when "add"
+  puts "Added!"
+  when "update"
+  puts "Updated!"
+  when "display"
+  puts "Movies!"
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#4/10
