@@ -1,0 +1,46 @@
+#1/20
+ruby_is_eloquent = true
+ruby_is_ugly = false
+
+puts "Ruby is eloquent!" if ruby_is_eloquent
+puts "Ruby's not ugly!" unless ruby_is_ugly
+
+#2/20
+# Type your Ruby code below!
+puts "great, problem solved" if true
+
+#3/20
+# Type your Ruby code below!
+puts "the end" unless true
+
+#4/20
+# Type your Ruby code below!
+puts 3>4 ? "erro" : "correcto"
+
+#5/20
+puts "Hello there!"
+greeting = gets.chomp
+
+# Add your case statement below!
+case greeting
+  when "English" then puts "Hello!"
+  when "French" then puts "Bonjour!"
+  when "German" then puts "Guten Tag!"
+  when "Finnish" then puts "Haloo!"
+  else puts "I don't know that language!"
+  end
+  
+  #6/20
+  favorite_book = nil
+puts favorite_book
+
+favorite_book ||= "Cat's Cradle"
+puts favorite_book
+
+favorite_book ||= "Why's (Poignant) Guide to Ruby"
+puts favorite_book
+
+favorite_book = "Why's (Poignant) Guide to Ruby"
+puts favorite_book
+
+#7/20
