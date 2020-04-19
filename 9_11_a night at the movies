@@ -233,3 +233,141 @@ else
 end
 
 #8/10
+movies =  {
+  "lo".to_sym => 4
+}
+
+puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+  if movies[title.to_sym].nil?
+   puts "What its rating?"
+   rating = gets.chomp
+   movies[title.to_sym] = rating.to_i 
+   puts "#{title} with #{rating} was added"
+  else
+    puts "already here"
+  end
+    puts movies
+  when "update"
+    puts "Title please"
+    title = gets.chomp
+  puts "#{title}"
+  if movies[title.to_sym].nil?
+     puts "Sure about the title?"
+  else
+    puts "and the updated rating is?"
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+  when "display"
+movies.each { |title,rating|
+puts "#{title}: #{rating}"}
+  when "delete"
+  puts "Deleted!"
+else
+  puts "Error!"
+end
+
+#9/10
+movies =  {
+  "lo".to_sym => 4
+}
+
+puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+puts "What is your added title?"
+title = gets.chomp
+  if movies[title.to_sym].nil?
+   puts "What its rating?"
+   rating = gets.chomp
+   movies[title.to_sym] = rating.to_i 
+   puts "#{title} with #{rating} was added"
+  else
+    puts "already here"
+  end
+    puts movies
+  when "update"
+    puts "Title please"
+    title = gets.chomp
+  puts "#{title}"
+  if movies[title.to_sym].nil?
+     puts "Sure about the title?"
+  else
+    puts "and the updated rating is?"
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+  when "display"
+movies.each { |title,rating|
+puts "#{title}: #{rating}"}
+  when "delete"
+  puts "For deletion?"
+  title = gets.chomp
+ if movies[title.to_sym].nil?
+  puts "Sure about the title?"
+  else 
+  movies.delete(title.to_sym)
+  puts "remaining"
+  movies.each { |title,rating|
+  puts "#{title}: #{rating}"}
+  end
+else
+  puts "Error!"
+end
+
+#10/10
+movies =  {
+  "lo".to_sym => 4
+}
+
+puts "What is your action"
+choice = gets.chomp
+
+case choice
+  when "add"
+  puts "Title to add?"
+  title = gets.chomp
+  if movies[title.to_sym].nil?
+     puts "What its rating?"
+     rating = gets.chomp
+     movies[title.to_sym] = rating.to_i 
+     puts "#{title} with #{rating} was added"
+  else
+    puts "Title already in"
+  end
+  when "update"
+  puts "Title please"
+  title = gets.chomp
+
+  if movies[title.to_sym].nil?
+    puts "Sure about the title?"
+  else
+    puts "And the updated rating is?"
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  end
+  when "display"
+  movies.each { |title,rating|
+  puts "#{title}: #{rating}"}
+  when "delete"
+  puts "For deletion?"
+  title = gets.chomp
+  if movies[title.to_sym].nil?
+  puts "Sure about the title?"
+  else 
+  movies.delete(title.to_sym)
+  puts "remaining"
+  movies.each { |title,rating|
+  puts "#{title}: #{rating}"}
+  end
+else
+  puts "only options: add, update, display, delete"
+end
