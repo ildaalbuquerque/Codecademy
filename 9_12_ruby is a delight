@@ -77,3 +77,66 @@ my_array.each { |x| puts x if x % 2==0 }
 "L".upto("P") { |l| puts l}
 
 #12/20
+age = 26
+# Add your code below!
+
+age.respond_to?(:next)
+puts age.respond_to?(:next)
+
+#13/20
+alphabet = ["a", "b", "c"]
+alphabet <<"d" # Update me!
+
+caption = "A giraffe surrounded by "
+caption << "weezards!" # Me, too!
+
+puts alphabet
+puts caption
+
+#14/20
+favorite_things = ["Ruby", "espresso", "candy"]
+
+puts "A few of my favorite things:"
+
+favorite_things.each do |thing|
+  puts "I love #{thing}!"
+end
+
+#15/20
+puts "One is less than two!" if 1 < 2
+
+#16/20
+puts 1 < 2 ? "One is less than two!" : "One is not less than two."
+
+#17/20
+puts "What's your favorite language?"
+language = gets.chomp
+case language
+when "Ruby" 
+  puts "Ruby is great for web apps!"
+when "Python" 
+  puts "Python is great for science."
+when "JavaScript" 
+  puts "JavaScript makes websites awesome."
+when "HTML" 
+  puts "HTML is what websites are made of!"
+when "CSS" 
+  puts "CSS makes websites pretty."
+else 
+  puts "I don't know that language!"
+end
+
+#18/20
+favorite_animal ||= "dog"
+puts "dog"
+
+#19/20
+def square n
+  n2=n*n
+end
+
+square(2)
+puts square(2)
+
+#20/20
+3.times do puts "I'm a refactoring master!" end 
