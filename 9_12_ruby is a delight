@@ -44,3 +44,36 @@ favorite_book = "Why's (Poignant) Guide to Ruby"
 puts favorite_book
 
 #7/20
+# Write your code on line 2!
+favorite_language ||= "Ruby"
+puts favorite_language
+
+#8/20
+def multiple_of_three(n)
+   n % 3 == 0 ? "True" : "False"
+end
+
+#9/20
+def a
+  puts "A was evaluated!"
+  return true
+end
+
+def b
+  puts "B was also evaluated!"
+  return true
+end
+
+puts a || b
+puts "------"
+puts a && b
+
+#10/20
+my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_array.each { |x| puts x if x % 2==0 }
+
+#11/20
+# Write your code below!
+"L".upto("P") { |l| puts l}
+
+#12/20
